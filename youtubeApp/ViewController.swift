@@ -12,9 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var i = 0
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
 
