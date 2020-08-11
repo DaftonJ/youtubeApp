@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6F0CC0C924A6B10900DDAF6B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CC0C824A6B10900DDAF6B /* Video.swift */; };
 		6F0CC0CB24A6B2E500DDAF6B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CC0CA24A6B2E500DDAF6B /* Model.swift */; };
+		6F36756724E2CBB30096537C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F36756624E2CBB30096537C /* DetailViewController.swift */; };
+		6F36756B24E2D2E80096537C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F36756924E2D2E30096537C /* WebKit.framework */; };
 		6F37FCD324A7DC1D00B29E4B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F37FCD224A7DC1D00B29E4B /* Response.swift */; };
 		6F481F2A24B66731003F2BD1 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F481F2924B66731003F2BD1 /* CacheManager.swift */; };
 		6F79E3D924B65CFB0047BEDA /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F79E3D824B65CFB0047BEDA /* VideoTableViewCell.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		6F0CC0C824A6B10900DDAF6B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		6F0CC0CA24A6B2E500DDAF6B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6F36756624E2CBB30096537C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6F36756924E2D2E30096537C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6F37FCD224A7DC1D00B29E4B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		6F481F2924B66731003F2BD1 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		6F79E3D824B65CFB0047BEDA /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
@@ -43,12 +47,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F36756B24E2D2E80096537C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F36756824E2D2E30096537C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F36756924E2D2E30096537C /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F79E3DA24B65D080047BEDA /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				6FEA372924A4FBAA000E3483 /* ViewController.swift */,
+				6F36756624E2CBB30096537C /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,6 +112,7 @@
 			children = (
 				6FEA372424A4FBAA000E3483 /* youtubeApp */,
 				6FEA372324A4FBAA000E3483 /* Products */,
+				6F36756824E2D2E30096537C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +218,7 @@
 				6F0CC0CB24A6B2E500DDAF6B /* Model.swift in Sources */,
 				6FD13C8E24A5572400BC5915 /* Constants.swift in Sources */,
 				6F79E3D924B65CFB0047BEDA /* VideoTableViewCell.swift in Sources */,
+				6F36756724E2CBB30096537C /* DetailViewController.swift in Sources */,
 				6F0CC0C924A6B10900DDAF6B /* Video.swift in Sources */,
 				6F37FCD324A7DC1D00B29E4B /* Response.swift in Sources */,
 			);

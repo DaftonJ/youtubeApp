@@ -62,9 +62,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        guard let selectedVideo = tableView.indexPathForSelectedRow?.row else {return}
+        
+        let detailVC = segue.destination as? DetailViewController
+        
+        detailVC?.video = videos[selectedVideo]
     }
-    
     
 }
